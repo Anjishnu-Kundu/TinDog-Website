@@ -1,0 +1,180 @@
+/* Note for css: If you have two or more css stylesheets that target the same element, then be careful about their ordering
+and the stylesheet that you link at last in the head section of the html page, that is the style which will overwrite all
+the other styles applied before it. Similarly, if you write the custom css stylesheet link after the bootstrap cdn link
+then it will overwrite the default boostrap modifications for the webpage.*/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+.container-fluid {
+  padding: 3% 15% 1%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+.big-heading {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#title {
+  background-color: #ff4c68;
+  color: #ffffff;
+  text-align: left;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu';
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+
+/* Download buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title image */
+.title-image {
+  width: 50%;
+  transform: rotate(25deg);
+  position: relative;
+  left: 30%;
+  bottom: -1vh;
+}
+/* Features section */
+#features {
+  padding: 7% 15%;
+  background-color: #ffffff;
+  margin-top: -120px;
+  position: relative;
+  z-index: 1;           /* z-index functions only when positioning is not static*/
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+/* Testimonials */
+
+#testimonials {
+  background-color: #ef8172;
+  color: #ffffff;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+
+#pricing {
+  padding: 100px;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* CTA section */
+#cta {
+  background-color: #ff4c68;
+  color: #ffffff;
+  padding: 7% 15%;
+}
+
+#footer {
+  padding: 7% 15%;
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+@media (max-width: 1010px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    width: 70%;
+    position: static;
+    transform: rotate(0);
+    position: relative;
+    left: 8px;
+    padding-bottom: 140px;
+  }
+
+}
